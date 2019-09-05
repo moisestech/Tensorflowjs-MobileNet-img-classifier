@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+  </head>
+  <body>
+    <div id="console"></div>
+
+    <!-- Add an image that we will use to test -->
+    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+    <button id="class-a">Add A</button>
+    <button id="class-b">Add B</button>
+    <button id="class-c">Add C</button>
+    <button id="class-d">Add D</button>
+
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+
+  <p>A simple machine learning web application using TensorFlow.js.</p>
+  <p>The app uses retrained MobileNet model for classifying images from webcam.</p>
+  <p>You then customized the model to classify images into 4 custom categories.</p>
+  <a href="https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#8">MobileNet Transfer Learning Image Classifier</a>
+  <p><a href="https://www.tensorflow.org/js/">TensorFlow.JS</a></p>
+</html>
